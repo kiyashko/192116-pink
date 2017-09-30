@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Кияшко](https://up.htmlacademy.ru/adaptive/12/user/192116).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Билик](https://htmlacademy.ru/profile/id74397).
 
 ---
 
