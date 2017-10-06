@@ -14,7 +14,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
@@ -22,7 +22,7 @@
       </nav>
       <section class="page-header-intro">
         <div class="page-header-intro__wrapper">
-          <h1 class="page-header-intro__title">Взгляните на жизнь иначе!</h1>
+          <h1 class="page-header-intro__title">Фотографии пользователей</h1>
         </div>
       </section>
     </header>
@@ -30,58 +30,59 @@
     <main class="page-main">
       <section class="main-photo">
         <h2 class="visually-hidden">Панорама дня</h2>
-        <div class="main-photo-title__wrapper">
-          <p class="main-photo-title">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите как не хватает ваших?</p>
+        <div class="main-photo__wrapper">
+          <p class="main-photo__title">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите как не хватает ваших?</p>
         </div>
         <div class="main-photo__panorama">
-          <img class="main-photo__panorama-img" src="http://placehold.it/1200x500" width="1200" height="500" alt="Панорама дня">
-          <p class="main-photo__panorama-description">Панорама дня</p>
+          <a class="main-photo__link"><img class="main-photo__image" src="http://placehold.it/1200x500" width="1200" height="500" alt="Панорама дня"></a>
+          <p class="main-photo__sticker">Панорама дня</p>
         </div>
         <div class="main-photo__user">
-          <h3 class="main-photo__title">Анна <span class="main-photo__title-time">(5 минут назад)</span></h3>
+          <h3 class="main-photo__name">Анна <span class="main-photo__title-time">(5 минут назад)</span></h3>
           <p class="main-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="main-photo__like">Нравится: 215</p>
+          <p class="main-photo__likes">Нравится: 215 <a class="main-photo__like" href="#">LIKE</a></p>
         </div>
       </section>
 
       <section class="user-photo">
         <h2 class="visually-hidden">Фото пользователей</h2>
-        <div class="user-photo__wrapper">
-          <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
-          <h3 class="user-photo__title">Левон <span class="user-photo__title-time">(5 часов назад)</span></h3>
-          <p class="user-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="user-photo__like">Нравится: 356</p>
-        </div>
-        <div class="user-photo__wrapper">
-          <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
-          <h3 class="user-photo__title">Антон <span class="user-photo__title-time">(12 часов назад)</span></h3>
-          <p class="user-photo__description">Соседи будут рады!</p>
-          <p class="user-photo__like">Нравится: 666</p>
-        </div>
-        <div class="user-photo__wrapper">
-          <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
-          <h3 class="user-photo__title">Борис <span class="user-photo__title-time">(20 часов назад)</span></h3>
-          <p class="user-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="user-photo__like">Нравится: 215</p>
-        </div>
-        <div class="user-photo__wrapper">
-          <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
-          <h3 class="user-photo__title">Сергей <span class="user-photo__title-time">(25 часов назад)</span></h3>
-          <p class="user-photo__description">Самая кубанская в мире!</p>
-          <p class="user-photo__like">Нравится: 4</p>
-        </div>
-        <div class="user-photo__wrapper">
-          <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
-          <h3 class="user-photo__title">Максим <span class="user-photo__title-time">(40 часов назад)</span></h3>
-          <p class="user-photo__description">Где снег-то?</p>
-          <p class="user-photo__like">Нравится: 150</p>
-        </div>
-        <div class="user-photo__wrapper">
-          <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
-          <h3 class="user-photo__title">Надежда <span class="user-photo__title-time">(45 часов назад)</span></h3>
-          <p class="user-photo__description">Всем GM и взаимные лайки!</p>
-          <p class="user-photo__like">Нравится: 2560</p>
-        </div>
+        <ul class="user-photo__post">
+          <li class="post">
+            <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
+            <h3 class="user-photo__title">Левон <time class="user-photo__time">(5 часов назад)</span></h3>
+            <p class="user-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="user-photo__likes">Нравится: 356 <a class="user-photo__like" href="#">LIKE</a></p>
+          </li>
+          <li class="post">
+            <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
+            <h3 class="user-photo__title">Антон <time class="user-photo__time">(12 часов назад)</span></h3>
+            <p class="user-photo__description">Соседи будут рады!</p>
+            <p class="user-photo__likes">Нравится: 666 <a class="user-photo__like" href="#">LIKE</a></p>
+          </li>
+          <li class="post">
+            <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
+            <h3 class="user-photo__title">Борис <time class="user-photo__time">(20 часов назад)</span></h3>
+            <p class="user-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="user-photo__likes">Нравится: 215 <a class="user-photo__like" href="#">LIKE</a></p>
+          </li>
+          <li class="post">
+            <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
+            <h3 class="user-photo__title">Сергей <time class="user-photo__time">(25 часов назад)</span></h3>
+            <p class="user-photo__description">Самая кубанская в мире!</p>
+            <p class="user-photo__likes">Нравится: 4 <a class="user-photo__like" href="#">LIKE</a></p>
+          </li>
+          <li class="post">
+            <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
+            <h3 class="user-photo__title">Максим <time class="user-photo__time">(40 часов назад)</span></h3>
+            <p class="user-photo__description">Где снег-то?</p>
+            <p class="user-photo__likes">Нравится: 150 <a class="user-photo__like" href="#">LIKE</a></p>
+          </li>
+          <li class="post">
+            <img class="user-photo__img" src="http://placehold.it/300x400" width="300" height="400" alt="Фото пользователя">
+            <h3 class="user-photo__title">Надежда <time class="user-photo__time">(45 часов назад)</span></h3>
+            <p class="user-photo__description">Всем GM и взаимные лайки!</p>
+            <p class="user-photo__likes">Нравится: 2560 <a class="user-photo__like" href="#">LIKE</a></p>
+          </li>
       </section>
 
       <section class="add-photo">
@@ -91,13 +92,16 @@
         </div>
         <form class="add-photo__form" action="echo" method="post">
           <img class="add-photo__form-img" src="http://placehold.it/300x400" width="300" height="400" alt="Новое Фото">
-          <div class="add-photo range-controls">
-            <div class="range-controls__crop"></div>
-            <div class="range-controls__fill"></div>
-            <div class="range-controls__contrast"></div>
+          <div class="add-photo__controls">
+            <div class="controls__crop"></div>
+            <div class="add-photo__bar"></div>
+            <div class="controls__fill"></div>
+            <div class="add-photo__bar"></div>
+            <div class="controls__contrast"></div>
+            <div class="add-photo__bar"></div>
           </div>
-          <input class="btn add-photo__button--submit" type="submit" value="Запостить">
-          <input class="btn add-photo__button--reset" type="reset" value="Отмена">
+          <button class="btn add-photo__button--submit" type="submit" value="Запостить">
+          <button class="btn add-photo__button--reset" type="reset" value="Отмена">
         </form>
       </section>
 
