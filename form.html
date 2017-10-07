@@ -33,37 +33,37 @@
         <p class="main-header__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       </section>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__item--clean">
-          <label class="form-name__title" for="surname">Фамилия:</label>
+        <fieldset class="form__item form__item--clean">
+          <label class="form__label" for="surname">Фамилия:</label>
           <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
-          <label class="form-name__title" for="name">Имя:</label>
+          <label class="form__label" for="name">Имя:</label>
           <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
-          <label class="form-name__title" for="mname">Отчество:</label>
+          <label class="form__label" for="mname">Отчество:</label>
           <input class="form__input" type="text" name="mname" id="mname" placeholder="Ну и отчество тоже">
         </fieldset>
         <fieldset class="form__item">
           <legend class="form__title">С каким приложением путешествовали?</legend>
             <input class="radio" type="radio" name="app" id="ios" value="ios" checked>
-              <label class="apps__name" for="ios">
+              <label class="form__label" for="ios">
                 Pink для iOS
               </label>
             <input class="radio" type="radio" name="app" id="android" value="android">
-              <label class="apps__name" for="android">
+              <label class="form__label" for="android">
                 Pink на Android
               </label>
             <input class="radio" type="radio" name="app" id="windows" value="windows">
-              <label class="apps__name" for="windows">
+              <label class="form__label" for="windows">
                 Windows Phone
               </label>
         </fieldset>
         <fieldset class="form__item">
           <legend class="form__title">Контактная информация</legend>
-            <input class="form-contacts__phone-input" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста">
-              <label class="form-contacts__phone" for="tel">
+            <input class="form__phone-input" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста">
+              <label class="form__phone" for="tel">
                 Номер телефона
               </label>
-            <input class="form-contacts__email-input" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите почту *" required>
-              <label class="form-contacts__email" for="email">
+            <input class="form__email-input" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите почту *" required>
+              <label class="form__email" for="email">
                 Адрес почты
               </label>
         </fieldset>
@@ -96,7 +96,7 @@
         </fieldset>
         <fieldset class="form__item">
           <legend class="form__title">Опишите свои эмоции</legend>
-          <textarea class="form__input--text" name="emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="form__input form__input--text" name="emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <div class="form__button">
           <button class="btn form__submit">Отправить форму</button>
